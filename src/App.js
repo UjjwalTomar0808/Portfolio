@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Navbar } from './components';
-import { About, Header,Work } from './container';
+import { About, Footer, Header, Skills, Work } from './container';
 
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
       <Header />
       <About />
       <Work />
+      <Skills />
+      <Footer />
     </div>
   );
 }
