@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 
+
 @media screen and (max-width: 768px) {
   .app__footer {
     flex-direction: column;

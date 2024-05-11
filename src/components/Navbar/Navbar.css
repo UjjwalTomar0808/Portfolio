@@ -89,6 +89,7 @@
   .app__navbar-menu svg {
     width: 70%;
     height: 70%;
+    /* color: red; */
     color: var(--white-color);
   }
   
@@ -99,7 +100,7 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 80%;
+    width: 80vw;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -107,6 +108,7 @@
     flex-direction: column;
     background: url('../../assets/bgWhite.png');
     background-color: var(--white-color);
+    backdrop-filter: blur(10px);
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);

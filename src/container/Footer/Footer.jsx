@@ -6,25 +6,47 @@ import './Footer.css';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [submit, setSubmit] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const { username, email, message } = formData;
-
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    // setformfilled(true)
   };
 
   const handleSubmit = () => {
     setLoading(true);
-
-    // for (let i = 0; i < 1000000000000000; i++) { } // it slow down the code ,for displaying the sending message 
     
-    setLoading(false);
-    setIsFormSubmitted(true);
   
+    // Basic form validation
+    if (!username || !email || !message) {
+      // If any field is empty, set formfilled to false and prevent submission
+      // setformfilled(false);
+      // for (let i = 0; i < 1000000000000000; i++) {} // it slow down the code ,for displaying the sending message 
+
+      setLoading(false);
+      setSubmit(true);
+      return;
+    }
+  
+    // Email format validation using regular expression
+    if (emailRegex.test(email)) {
+      // If email format is invalid, set formfilled to false and prevent submission
+      // setformfilled(false);
+      setLoading(false);
+      setIsFormSubmitted(true);
+      return;
+    }
+    // Assuming validation passed, proceed with form submission
+    setLoading(false);
+    setSubmit(true)
   };
+  
 
   return (
     <>
@@ -33,7 +55,7 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:ujjwaltomar.0808@gmail.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:ujjwaltomar.0808@gmail.com" className="p-text">ujjwaltomar.0808@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
@@ -43,10 +65,29 @@ const Footer = () => {
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+
+            <input 
+            className="p-text" 
+            type="text" 
+            placeholder="Your Name" 
+            name="username" 
+            value={username} 
+            style={{ border: ((!username || !username.trim()) && submit ) ? '1px solid red' : '1px solid #ccc' }}
+            onChange={handleChangeInput} 
+            />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+                
+            <input 
+            className="p-text" 
+            type="email" 
+            placeholder="Your Email" 
+            name="email" 
+            value={email} 
+            style={{ border: ((!email || !emailRegex.test(email)) && submit ) ? '1px solid red' : '1px solid #ccc' }}
+            onChange={handleChangeInput} 
+            />
+
           </div>
           <div>
             <textarea
@@ -54,8 +95,10 @@ const Footer = () => {
               placeholder="Your Message"
               value={message}
               name="message"
+              style={{ border: ((!message || !message.trim() ) && submit ) ? '1px solid red' : '1px solid #ccc' }}
               onChange={handleChangeInput}
             />
+
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>

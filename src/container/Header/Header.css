@@ -182,15 +182,19 @@
 }
 
 .app__header-img img {
-  width: 100%;
-  object-fit: contain;
+  width:200%;
+  object-fit: cover;
   z-index: 1;
+  /* position: relative; */
+  /* top: -150px; */
 }
 
 .app__header-img .overlay_circle {
+  object-fit:contain;
   position: absolute;
   left: 0;
   right: 0;
+  top: 20px;
   bottom: 0;
   z-index: 0;
   width: 100%;
