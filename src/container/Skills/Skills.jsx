@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
+import { images } from '../../constants';
 import './Skills.css'; 
 import { AppWrap, MotionWrap } from '../../wrapper';
 
@@ -18,7 +18,11 @@ const Tooltip = ({ content, children }) => {
   return (
     <div className="tooltip-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {children}
-      {showTooltip && <div className="tooltip">{content}</div>}
+      {showTooltip && (
+        <div className="tooltip">
+          {content}
+        </div>
+      )}
     </div>
   );
 };
@@ -28,52 +32,47 @@ const skills = [
   {
     name: 'HTML',
     bgcolor: '#E34C26',
-    icon: 'html5',
+    icon: images.html,
   },
   {
     name: 'CSS',
     bgcolor: '#1572B6',
-    icon: 'css3',
+    icon: images.css,
   },
   {
     name: 'JavaScript',
     bgcolor: '#F7DF1E',
-    icon: 'javascript',
+    icon: images.javascript,
   },
   {
     name: 'React',
     bgcolor: '#61DAFB',
-    icon: 'react',
+    icon: images.react,
   },
   {
     name: 'Node.js',
     bgcolor: '#68A063',
-    icon: 'nodejs',
+    icon: images.node,
   },
   {
     name: 'Python',
     bgcolor: '#3776AB',
-    icon: 'python',
+    icon: images.python,
   },
   {
     name: 'UI/UX Design',
     bgcolor: '#663399',
-    icon: 'palette',
+    icon: images.figma,
   },
   {
     name: 'Responsive Design',
     bgcolor: '#009688',
-    icon: 'aspect_ratio',
+    icon: images.mobile,
   },
   {
-    name: 'Mobile App Development',
+    name: 'Flutter',
     bgcolor: '#3F51B5',
-    icon: 'phone_android',
-  },
-  {
-    name: 'Web Development',
-    bgcolor: '#795548',
-    icon: 'web',
+    icon: images.flutter,
   },
 ];
 
@@ -157,7 +156,7 @@ const Skills = () => (
   </>
 );
 
-// export default Skills;
+
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',

@@ -95,6 +95,10 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
+  useEffect(() => {
+    setFilterWork(works);
+  }, []);
+
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -139,7 +143,8 @@ const Work = () => {
               <img src={work.imgUrl} alt={work.name} />
 
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                 initial={{ opacity: 0 }}
+                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
