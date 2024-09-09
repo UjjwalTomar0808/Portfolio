@@ -73,27 +73,27 @@ const skills = [
 
 const experiences = [
   {
-    year: '2023-2024',
+    year: '2023-Present',
     work: {
-      name: 'Web Developer',
-      company: 'Tech Solutions Inc.',
-      description: 'Developed and maintained web applications using modern technologies such as React.js and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.',
+      name: 'Web Coordinator',
+      company: 'DEV UP Club',
+      description: 'Planned web-related and tech activities, arranged boot camps on web development, fostering knowledge exchange among members.',
     },
   },
   {
-    year: '2021-2023',
+    year: '2023-Present',
     work: {
-      name: 'Software Engineer',
-      company: 'Innovative Technologies Ltd.',
-      description: 'Contributed to the development of a scalable and robust software platform for data analytics. Designed and implemented new features and enhancements.',
+      name: 'Web Coordinator',
+      company: 'NSCC Club',
+      description: 'Organized boot camps on Git, web development, and tech subjects, and facilitated skill development through knowledge sharing.',
     },
   },
   {
-    year: '2019-2021',
+    year: '2023-Present',
     work: {
-      name: 'Frontend Developer',
-      company: 'Digital Solutions Co.',
-      description: 'Responsible for building responsive and user-friendly web interfaces. Worked closely with design teams to ensure pixel-perfect implementation of UI/UX designs.',
+      name: 'Member',
+      company: 'GDSC',
+      description: 'Guided contributors in resolving open-source challenges and helped plan a course for over 100 students from diverse backgrounds.',
     },
   },
 ];
