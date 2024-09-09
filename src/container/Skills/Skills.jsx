@@ -69,11 +69,6 @@ const skills = [
     bgcolor: '#009688',
     icon: images.mobile,
   },
-  {
-    name: 'Flutter',
-    bgcolor: '#3F51B5',
-    icon: images.flutter,
-  },
 ];
 
 const experiences = [

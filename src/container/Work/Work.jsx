@@ -6,89 +6,57 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Work.css';
 
-const works=[
+const works = [
   {
-    title: "E-commerce Website Redesign",
-    description: "Redesigned the user interface and experience of an e-commerce website .",
-    // description: "Redesigned the user interface and experience of an e-commerce website to improve user engagement and conversion rates.",
+    title: "Campus Connect",
+    description: "A campus community platform for students to connect and collaborate.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/ecommerce_redesign",
-    codeLink: "https://github.com/yourusername/ecommerce_redesign",
-    tags: ["UI/UX", "Web App", "E-commerce"]
+    projectLink: "https://example.com/campus_connect",
+    codeLink: "https://github.com/yourusername/campus_connect",
+    tags: ["Web App", "React JS", "Node.js", "MongoDB"]
   },
   {
-    title: "Task Management Mobile App",
-    description: "Developed a mobile application for efficient task management on iOS and Android platforms.",
+    title: "E-Commerce",
+    description: "An online shopping platform with user authentication, product listings, and payment gateway integration.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/task_management_app",
-    codeLink: "https://github.com/yourusername/task_management_app",
-    tags: ["Mobile App", "React JS"]
+    projectLink: "https://example.com/ecommerce",
+    codeLink: "https://github.com/yourusername/ecommerce",
+    tags: ["Web App", "React JS", "Node.js", "MongoDB Atlas"]
+  },
+  {
+    title: "News4U",
+    description: "A real-time news app that fetches and displays the latest headlines from various sources.",
+    imgUrl: images.about03,
+    projectLink: "https://example.com/news4u",
+    codeLink: "https://github.com/yourusername/news4u",
+    tags: ["Web App", "React JS", "CSS3", "News API"]
   },
   {
     title: "Portfolio Website",
-    description: "Designed and developed a portfolio website to showcase projects and skills.",
+    description: "A personal portfolio showcasing projects, skills, and contact details.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/portfolio_website",
-    codeLink: "https://github.com/yourusername/portfolio_website",
-    tags: ["UI/UX", "Web App"]
+    projectLink: "https://example.com/portfolio",
+    codeLink: "https://github.com/yourusername/portfolio",
+    tags: ["Web App", "React JS", "CSS3"]
   },
   {
-    title: "Social Media Dashboard",
-    description: "Created a dashboard for monitoring and analyzing social media metrics.",
+    title: "SplitBills",
+    description: "A bill-splitting app allowing users to divide expenses among friends.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/social_media_dashboard",
-    codeLink: "https://github.com/yourusername/social_media_dashboard",
-    tags: ["UI/UX", "React JS", "Web App"]
-  },
-  {
-    title: "Weather App",
-    description: "Developed a weather application that provides real-time weather updates based on user location.",
-    imgUrl: images.about03,
-    projectLink: "https://example.com/weather_app",
-    codeLink: "https://github.com/yourusername/weather_app",
-    tags: ["Mobile App", "React JS"]
-  },
-  {
-    title: "Recipe Finder",
-    description: "Built a web application to search for recipes based on ingredients.",
-    imgUrl: images.about03,
-    projectLink: "https://example.com/recipe_finder",
-    codeLink: "https://github.com/yourusername/recipe_finder",
+    projectLink: "https://example.com/splitbills",
+    codeLink: "https://github.com/yourusername/splitbills",
     tags: ["Web App", "React JS"]
   },
   {
-    title: "Blog Website",
-    description: "Developed a blog website with features for creating, editing, and managing blog posts.",
+    title: "Tic Tac Toe",
+    description: "A simple, interactive Tic Tac Toe game for browser-based play.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/blog_website",
-    codeLink: "https://github.com/yourusername/blog_website",
-    tags: ["Web App", "React JS"]
-  },
-  {
-    title: "Online Learning Platform",
-    description: "Created an online platform for learning various subjects through interactive courses.",
-    imgUrl: images.about03,
-    projectLink: "https://example.com/learning_platform",
-    codeLink: "https://github.com/yourusername/learning_platform",
-    tags: ["UI/UX", "Web App", "React JS"]
-  },
-  {
-    title: "Portfolio Redesign",
-    description: "Redesigned and updated personal portfolio website with new projects and features.",
-    imgUrl: images.about03,
-    projectLink: "https://example.com/portfolio_redesign",
-    codeLink: "https://github.com/yourusername/portfolio_redesign",
-    tags: ["UI/UX", "Web App"]
-  },
-  {
-    title: "Task Tracker",
-    description: "Built a task tracking application to help users organize and manage their tasks effectively.",
-    imgUrl: images.about03,
-    projectLink: "https://example.com/task_tracker",
-    codeLink: "https://github.com/yourusername/task_tracker",
-    tags: ["UI/UX", "Web App", "React JS"]
-  },
+    projectLink: "https://example.com/tictactoe",
+    codeLink: "https://github.com/yourusername/tictactoe",
+    tags: ["Web App", "HTML", "CSS", "JavaScript"]
+  }
 ];
+
 
 const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
@@ -119,7 +87,7 @@ const Work = () => {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Web App', 'React JS','UI/UX',  'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
