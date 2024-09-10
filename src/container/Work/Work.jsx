@@ -12,7 +12,7 @@ const works = [
     description: "A campus community platform for students to connect and collaborate.",
     imgUrl: images.about03,
     projectLink: "https://example.com/campus_connect",
-    codeLink: "https://github.com/yourusername/campus_connect",
+    codeLink: "https://github.com/UjjwalTomar0808/SM-Backend",
     tags: ["Web App", "React JS", "Node.js", "MongoDB"]
   },
   {
@@ -20,7 +20,7 @@ const works = [
     description: "An online shopping platform with user authentication, product listings, and payment gateway integration.",
     imgUrl: images.about03,
     projectLink: "https://example.com/ecommerce",
-    codeLink: "https://github.com/yourusername/ecommerce",
+    codeLink: "https://github.com/UjjwalTomar0808/E-commerce",
     tags: ["Web App", "React JS", "Node.js", "MongoDB Atlas"]
   },
   {
@@ -36,15 +36,15 @@ const works = [
     description: "A personal portfolio showcasing projects, skills, and contact details.",
     imgUrl: images.about03,
     projectLink: "https://example.com/portfolio",
-    codeLink: "https://github.com/yourusername/portfolio",
+    codeLink: "https://github.com/UjjwalTomar0808/Portfolio",
     tags: ["Web App", "React JS", "CSS3"]
   },
   {
     title: "SplitBills",
     description: "A bill-splitting app allowing users to divide expenses among friends.",
     imgUrl: images.about03,
-    projectLink: "https://example.com/splitbills",
-    codeLink: "https://github.com/yourusername/splitbills",
+    projectLink: "https://github.com/UjjwalTomar0808/splitbills",
+    codeLink: "https://github.com/UjjwalTomar0808/splitbills",
     tags: ["Web App", "React JS"]
   },
   {
