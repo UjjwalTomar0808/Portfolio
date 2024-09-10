@@ -17,6 +17,11 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import portfolio from '../assets/portfolio.png';
+import ecommerce from '../assets/ecommerce.png';
+import tictactoe from '../assets/tictactoe.png';
+import news4u from '../assets/news4u.png';
+import campus_connect from '../assets/campus_connect.png';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -69,4 +74,9 @@ export default {
   nb,
   skype,
   spotify,
+  ecommerce,
+  portfolio,
+  tictactoe,
+  news4u,
+  campus_connect,
 };

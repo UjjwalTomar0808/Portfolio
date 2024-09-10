@@ -10,7 +10,7 @@ const works = [
   {
     title: "Campus Connect",
     description: "A campus community platform for students to connect and collaborate.",
-    imgUrl: images.about03,
+    imgUrl: images.campus_connect ,
     projectLink: "https://example.com/campus_connect",
     codeLink: "https://github.com/UjjwalTomar0808/SM-Backend",
     tags: ["Web App", "React JS", "Node.js", "MongoDB"]
@@ -18,7 +18,7 @@ const works = [
   {
     title: "E-Commerce",
     description: "An online shopping platform with user authentication, product listings, and payment gateway integration.",
-    imgUrl: images.about03,
+    imgUrl: images.ecommerce,
     projectLink: "https://example.com/ecommerce",
     codeLink: "https://github.com/UjjwalTomar0808/E-commerce",
     tags: ["Web App", "React JS", "Node.js", "MongoDB Atlas"]
@@ -26,7 +26,7 @@ const works = [
   {
     title: "News4U",
     description: "A real-time news app that fetches and displays the latest headlines from various sources.",
-    imgUrl: images.about03,
+    imgUrl: images.news4u,
     projectLink: "https://example.com/news4u",
     codeLink: "https://github.com/yourusername/news4u",
     tags: ["Web App", "React JS", "CSS3", "News API"]
@@ -34,7 +34,7 @@ const works = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio showcasing projects, skills, and contact details.",
-    imgUrl: images.about03,
+    imgUrl: images.portfolio,
     projectLink: "https://example.com/portfolio",
     codeLink: "https://github.com/UjjwalTomar0808/Portfolio",
     tags: ["Web App", "React JS", "CSS3"]
@@ -50,7 +50,7 @@ const works = [
   {
     title: "Tic Tac Toe",
     description: "A simple, interactive Tic Tac Toe game for browser-based play.",
-    imgUrl: images.about03,
+    imgUrl: images.tictactoe,
     projectLink: "https://example.com/tictactoe",
     codeLink: "https://github.com/yourusername/tictactoe",
     tags: ["Web App", "HTML", "CSS", "JavaScript"]
