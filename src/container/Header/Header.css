@@ -182,10 +182,11 @@
 }
 
 .app__header-img img {
-  width:200%;
+  width:100%;
   object-fit: cover;
   z-index: 1;
-  /* position: relative; */
+  position: relative;
+  right: -10%;
   /* top: -150px; */
 }
 
