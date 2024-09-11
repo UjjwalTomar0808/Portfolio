@@ -22,6 +22,7 @@ import ecommerce from '../assets/ecommerce.png';
 import tictactoe from '../assets/tictactoe.png';
 import news4u from '../assets/news4u.png';
 import campus_connect from '../assets/campus_connect.png';
+import splitbills from '../assets/splitbills.png';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -79,4 +80,5 @@ export default {
   tictactoe,
   news4u,
   campus_connect,
+  splitbills,
 };

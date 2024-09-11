@@ -42,7 +42,7 @@ const works = [
   {
     title: "SplitBills",
     description: "A bill-splitting app allowing users to divide expenses among friends.",
-    imgUrl: images.about03,
+    imgUrl: images.splitbills,
     projectLink: "https://github.com/UjjwalTomar0808/splitbills",
     codeLink: "https://github.com/UjjwalTomar0808/splitbills",
     tags: ["Web App", "React JS"]
