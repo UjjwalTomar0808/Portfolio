@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Skills & Work Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project showcases the skills and experiences, as well as the work portfolio of a web developer. It features a responsive layout with skill cards, experience details, and a project portfolio section.
 
-## Available Scripts
+## Table of Contents
+- [Overview](#overview)
+- [Skills Section](#skills-section)
+- [Experience Section](#experience-section)
+- [Work Portfolio Section](#work-portfolio-section)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This portfolio showcases the skills, professional experience, and project works of a developer. It is built using React.js and showcases the following sections:
+- **Skills Section**: Displays different technologies and tools along with their icons and descriptions.
+- **Experience Section**: Lists the user's work experience and roles in different organizations.
+- **Work Portfolio Section**: Displays a collection of the user's projects with detailed descriptions and links to live versions and source code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Skills Section
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The **Skills Section** highlights the key technologies the developer is proficient in. Skills are represented as clickable cards containing an icon and a short description. A tooltip is shown on hover to display additional information about the technology.
 
-### `npm test`
+### Skills List:
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- Python
+- UI/UX Design
+- Responsive Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Each skill card has:
+- A circular icon of the technology.
+- A name displayed below the icon.
 
-### `npm run build`
+## Experience Section
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The **Experience Section** showcases the developer's work experience in various clubs and roles. Each work experience is displayed with the year, role, company, and a description of the responsibilities.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Example Experience:
+- **Web Coordinator at DEV UP Club (2023-Present)**
+  - Planned web-related activities and boot camps on web development, fostering knowledge exchange among members.
+  
+- **Web Coordinator at NSCC Club (2023-Present)**
+  - Organized boot camps on Git, web development, and tech topics, facilitating skill development.
+  
+- **Member of GDSC (2023-Present)**
+  - Helped contributors resolve open-source challenges and helped plan a course for over 100 students.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Work Portfolio Section
 
-### `npm run eject`
+The **Work Portfolio Section** displays the projects the developer has worked on. Each project has:
+- A title.
+- A description.
+- Tags such as the technologies used.
+- Links to the live project and the GitHub repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Example Projects:
+- **Campus Connect**: A campus community platform for students to connect and collaborate.
+- **E-Commerce**: An online shopping platform with user authentication and payment integration.
+- **News4U**: A real-time news app displaying the latest headlines from various sources.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend**: React.js, HTML, CSS, JavaScript
+- **Backend**: Node.js, MongoDB (for some projects)
+- **Libraries**: React Icons, Framer Motion
+- **Styling**: CSS (custom styles)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
